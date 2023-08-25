@@ -9,7 +9,7 @@ RUN apt update
 RUN apt install -y locales && locale-gen --purge en_US.UTF-8
 
 # https://getsubstrate.io/
-RUN apt install -y cmake pkg-config libssl-dev git gcc build-essential git protobuf protobuf-compiler clang libclang-dev
+RUN apt install -y cmake pkg-config libssl-dev git gcc build-essential git protobuf-compiler clang libclang-dev
 RUN apt install -y sudo
 RUN apt install -y curl wget axel
 RUN apt install -y lld
