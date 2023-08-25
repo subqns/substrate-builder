@@ -15,6 +15,7 @@ RUN apt install -y curl wget axel
 RUN apt install -y lld
 RUN apt install -y tmux
 RUN apt install -y vim
+RUN yes | unminimize
 
 RUN curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path --default-toolchain nightly --target wasm32-unknown-unknown -y -q
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.cargo/bin
